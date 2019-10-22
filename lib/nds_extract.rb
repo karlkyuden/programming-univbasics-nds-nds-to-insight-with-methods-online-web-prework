@@ -6,7 +6,8 @@ require 'directors_database'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-  result = {}  
+  result = {}
+  pp nds
   while row_index < nds.length do
     column_index = 0
     puts nds[row_index][:name]
