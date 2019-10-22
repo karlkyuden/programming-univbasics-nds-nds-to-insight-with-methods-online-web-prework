@@ -10,7 +10,7 @@ def directors_totals(nds)
   row_index = 0
   while row_index < nds.length do
    
-    puts gross_for_director(nds[row_index])
+    gross_for_director(nds[row_index])
     row_index +=1
   end
   return result
@@ -25,7 +25,7 @@ def gross_for_director(director_data)
       grandTotal +=director_data[row_index][:movies][column_index][:worldwide_gross]
       column_index += 1
     end
-  return grandTotal
+  puts grandTotal
   
 end
 
